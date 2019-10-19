@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 public class HomeController extends HttpServlet {
 
     private static final String PAGE_HOME_JSP = "/WEB-INF/jsp/home.jsp";
-    private static final Logger LOGGER = Logger.getLogger( HomeController.class.getName() );
+    private static final String PAGE_GAME_JSP = "/WEB-INF/jsp/game.jsp";
 
     public HomeController() {}
 
@@ -24,6 +24,11 @@ public class HomeController extends HttpServlet {
     @Override
     public void destroy() {
         super.destroy();
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.getRequestDispatcher( PAGE_GAME_JSP ).forward( request, response );
     }
 
     @Override

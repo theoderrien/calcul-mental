@@ -61,8 +61,8 @@ public class calcul {
         }while(question != 10);
         chrono.stop();
         System.out.println("\nVotre score est de " + score +"/10 !");
-        System.out.println("Votre temps est de : " + chrono.getDureeTxt()); // affichage au format "1 h 26 min 32 s"*/
-    }
+        System.out.println("Votre temps est de : " + chrono.getDureeTxt()); // affichage au format "1 h 26 min 32 s"
+    }*/
 }
 
 

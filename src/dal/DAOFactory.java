@@ -24,7 +24,6 @@ public class DAOFactory {
 				break;
 			case "JPA":
 			default:
-				//TODO
 		}
 	}
 	

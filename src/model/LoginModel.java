@@ -32,15 +32,14 @@ public class LoginModel implements Serializable {
 
 			if ( user != null ) {
 				HttpSession session = request.getSession( true );
-				//TODO récupération et incrémentation du nombre de connexions
 				session.setAttribute( ATT_AUTH_SESSION, user );
 				authentResult = "Authentification réussie : Bienvenue " + login;
 			} else {
-				authentResult = "Authentification échouée !!!";
+				authentResult = "Authentification échouée";
 			}
 		} catch ( SQLException e ) {
 			System.out.println(e.getMessage());
-			authentResult = "Authentification échouée : Pb de connexion à la base de données !!! ";
+			authentResult = "Authentification échouée : Pb de connexion à la base de données";
 		}
 	}
 

@@ -26,7 +26,6 @@
 
 	<form method="POST" action="login">
 		<div class="form-icons">
-			<h4>Login</h4>
 			<div class="input-group">
 						<span class="input-group-label">
 							<i class="fa fa-user"></i>
@@ -38,12 +37,13 @@
 						<span class="input-group-label">
 							<i class="fa fa-key"></i>
 						</span>
-				<input class="input-group-field" type="password" placeholder="Mot de passe" name="form-pwd"
+				<input class="input-group-field" type="password" placeholder="Password" name="form-pwd"
 					   value=""/>
 			</div>
 		</div>
-		<button class="button expanded">Valider</button>
+		<button class="button expanded">Connexion</button>
 	</form>
+	<button class="button expanded">Inscription</button>
 
 
 </div>

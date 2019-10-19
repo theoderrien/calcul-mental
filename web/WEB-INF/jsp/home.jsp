@@ -16,6 +16,31 @@
         <h1>Calcul Mental</h1>
     </div>
 </div>
+    <div class="row column text-center">
+        <h1>/-/</h1>
+    </div>
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Best Score</th>
+        <th>Time</th>
+    </tr>
+    </thead>
+    <tbody>
+    <c:forEach var="user" items="${ sessionScope.user }" varStatus="status">
+        <tr>
+            <td>${user.login}</td>
+            <td>${user.score}</td>
+            <td>${user.time}</td>
+        </tr>
+    </c:forEach>
+    </tbody>
+</table>
+<form method="POST" action="home">
+    <button class="button expanded">Start</button>
+</form>
+
 <script src="<%= request.getContextPath()%>/vendor/foundation-6.5.1/js/vendor/jquery.js"></script>
 <script src="<%= request.getContextPath()%>/vendor/foundation-6.5.1/js/vendor/foundation.min.js"></script>
 <script>
